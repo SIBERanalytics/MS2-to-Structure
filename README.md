@@ -12,9 +12,10 @@ The python packages in the conda environment for performing MS/MS-to-structure w
 
 ## Directory Structure
 - `notebooks/`: Contains Jupyter Notebooks with code to run both the MS/MS-to-structure and heatmap construction.
-- `data/`: Contains both the input data and sample processed data after running MS/MS-to-structure as well as 
-  + `input/`: data extracted from LC-MS/MS using Mestrenova
-  + `output/`: sample output data after running MS/MS-to-structure, also the input data for heatmap construction
+- `heatmaps/`: Contains sample heatmaps.
+- `data/`: Contains both the input data and sample processed data after running MS/MS-to-structure as well as the reference MS/MS spectral library.
+  + `input/`: data extracted from LC-MS/MS using Mestrenova.
+  + `output/`: sample output data after running MS/MS-to-structure, also the input data for heatmap construction.
  
 ## Instructions
 1. Setup environment (`environment.yml`).
