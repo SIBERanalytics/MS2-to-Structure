@@ -30,6 +30,11 @@ conda activate wise
   + Ensure that reference library (`lib`) has the correct path to the sample reference library in `data/MSMS_reference_library.parquet`.
 4. Run the code under the notebook (`plot_heatmaps.ipynb`) using the output from Step 3 OR use the sample data from `data/output/`.
 
+## Using MS/MS-to-Structure On Your Own Data
+In order to use the WISE MS/MS-to-Structure code on your own MS/MS data you will need to prepare the following:
+- `MS/MS Input Data`: following the data structure of the sample input data in `data/input/` you will need to fill in the various fields with your own data to be queried. Only the `Precursor m/z` and `Expt MS2 Spectra` fields are mandatory. However, should you decide to not fill in other fields, some adjustments to the code in `WISE_msms_to_structure.ipynb` is necessary. Please note that `Expt MS2 Spectra` must be provided as a list of lists [[m/z, intensity], [m/z, intensity]...] with intensities binned to the nearest integer m/z.
+- `Reference MS/MS Library`: you will need to replace `MSMS_reference_library.parquet` with your own reference library that follows the same data format. SMILES as string, PrecursorMZ as float, Mass_Spec_Rounded as list of lists [[m/z, intensity], [m/z, intensity]...] with intensities binned to the nearest interger m/z, Isotope_Prob as a list (you may calculate this by running the code in `notebooks/isotope_calculator.ipynb`). You may either use a free database (e.g. GNPS, MoNA), commercial database (e.g. NIST), or generate your own (e.g. using ICEBERG from https://github.com/samgoldman97/ms-pred).
+
 ## Notes
 The input data was derived from the raw LC-MS/MS data using scripts executed in Mestrenova v15.0.1-35756 which is commercially available from Mestrelab Research S. L. (www.mestrelab.com).
 
