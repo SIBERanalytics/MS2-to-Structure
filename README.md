@@ -5,7 +5,7 @@
 
 This repository contains the source data and python scripts for the MS/MS-to-structure processing portion of the Workflow for Intelligent Structural Elucidation (WISE). Raw LC-MS/MS data is obtained from MassIVE with the accession number MSV000092237 (https://doi.org/doi:10.25345/C53X83W53). If you are planning to use the dataset, please cite the paper Tay, D. W. P.;  Tan, L. L.;  Heng, E.;  Zulkarnain, N.;  Chin, E. J.;  Tan, Z. Y. Q.;  Leong, C. Y.;  Ng, V. W. P.;  Yang, L. K.;  Seow, D. C. S.;  Kanagasundaram, Y.;  Ng, S. B.;  Lim, Y. H.; Wong, F. T., Tandem mass spectral metabolic profiling of 54 actinobacterial strains and their 459 mutants. _Sci. Data_ **2024**, _11_ (1), 977. DOI: 10.1038/s41597-024-03833-9
 
-The generated results and figures are presented in the manuscript titled "**Accelerating Natural Product Discovery with Linked MS-Genomics and Language/Transformer-Based Models**"
+The generated results and figures are presented in the manuscript titled "**Accelerating Natural Product Discovery with Linked MS-Genomics and Language/Transformer-Based Models**" https://www.biorxiv.org/content/10.1101/2025.01.20.633932v1
 
 ## Environment
 The python packages in the conda environment for performing MS/MS-to-structure with WISE and recreating the heatmap figures are provided the yaml file (`environment.yml`).
