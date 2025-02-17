@@ -24,7 +24,7 @@ conda activate wise
 ```
 2. Go to `notebooks/`.
 3. Run the code under the notebook (`WISE_msms_to_structure.ipynb`).
-  + You may select Valinomycin, Surfactin B, or Neomycin B, and declare it under the molecule variable.
+  + You may select Valinomycin, Surfactin B, or Neomycin B, and declare it under the `molecule` variable.
   + Ensure that the input_file has the correct path to the desired input file in `data/input/`.
   + Ensure that reference library (`lib`) has the correct path to the sample reference library in `data/MSMS_reference_library.parquet`.
 4. Run the code under the notebook (`plot_heatmaps.ipynb`) using the output from Step 3 OR use the sample data from `data/output/`.
